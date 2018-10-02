@@ -5,6 +5,7 @@ import MyNavbar from './navbar/mynavbar';
 import Movie from './movie/movie';
 import { Row, Col} from 'react-bootstrap';
 import './App.css';
+import Tittle from './tittle/tittle';
 
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
       <div className="App">
         <header>
           <div>
+            <Tittle text = "Tittulo como props"></Tittle>
             <MyNavbar></MyNavbar>
           </div>
           <hr/>
