@@ -1,30 +1,15 @@
 import React, {Component} from 'react';
-import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-//import '../../../../node_modules/bootstrap/dist/css/bootstrap-theme.min.css';
 import './mynavbar.css';
-import { Navbar, NavItem, Nav} from 'react-bootstrap';
-
 
 export default class myNavbar extends Component {
     render()
       {
         return(
-               <Navbar>
-                <Navbar.Header>
-                    <Navbar.Brand>
-                    <a href="#brand">React-Bootstrap</a>
-                    </Navbar.Brand>
-                    <Navbar.Toggle />
-                </Navbar.Header>
-                <Nav>
-                    <NavItem eventKey={1} href="#">
-                        Link1
-                    </NavItem>
-                    <NavItem eventKey={2} href="#">
-                        Link2
-                    </NavItem>
-                 </Nav>
-            </Navbar>
+            <div className="mynavbar">
+                <img className="Logo" src="https://pmcdeadline2.files.wordpress.com/2016/06/logo-tv-2.jpg?w=80&h=80&crop=1" alt="MyLogo" ></img>
+                <button className="button" >Home </button>
+                <hr></hr>
+            </div>
         );
     };
 }

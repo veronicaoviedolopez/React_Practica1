@@ -1,10 +1,24 @@
 .App {
-  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 20px;
+}
+.App-content{
+  display: flex;
+  justify-content: space-around;
+  
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
+
+ 
+}
+.App-movielist{
+  /*overflow-x: hidden;
+  white-space: nowrap;
+  overflow-y: auto;
+  */
 }
 
 .App-header {
@@ -27,7 +41,17 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
+.App-favoritelist{
+  /*height: 800px;*/
+  background-color: #112244;
+  color: azure
+}
+
+.favoritelist-tittle{
+  margin-top: 40px
+}
+
+/*@keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
+}*/

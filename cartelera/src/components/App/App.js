@@ -1,12 +1,9 @@
 import React, {Component} from 'react';
-import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-//import '../../../node_modules/bootstrap/dist/css/bootstrap-theme.min.css';
-import MyNavbar from './navbar/mynavbar';
 import Movie from './movie/movie';
-import { Row, Col} from 'react-bootstrap';
 import './App.css';
 import Tittle from './tittle/tittle';
-
+import Navbar from './navbar/mynavbar';
+import Favorite from './favorite/favorite';
 
 class App extends Component {
   render() {
@@ -14,26 +11,27 @@ class App extends Component {
       <div className="App">
         <header>
           <div>
-            <Tittle text = "Tittulo como props"></Tittle>
-            <MyNavbar></MyNavbar>
+          <Navbar></Navbar>
+          <Tittle className="App-title" text = "CARTELERA CINE BEDU"></Tittle>
           </div>
           <hr/>
-          <h1 className="App-title">CARTELERA CINE BEDU </h1>
         </header>
-        <Row className="show-grid">
-          <Col xs={6} md={4}>
-            <code>
+        <div className="App-content">
+          <div className="App-movielist">
             <Movie title="InterEstelar" gener="Acción" image = "http://2.bp.blogspot.com/-_DGDXwanEjA/VDxnbllbQ_I/AAAAAAAAap0/Zk_ABBPvFPE/s250-c/Wallpaper_Latino_Interestelar_V2_Preview_JPosters.png"/>
-            </code>
-          </Col>
-          <Col xs={6} md={4}>
-            <code>{'<Col xs={6} md={4} />'}</code>
-          </Col>
-          <Col xsHidden md={4}>
-            <code>{'<Col xsHidden md={4} />'}</code>
-          </Col>
-        </Row>
-        
+            <Movie title="InterEstelar" gener="Acción" image = "http://2.bp.blogspot.com/-_DGDXwanEjA/VDxnbllbQ_I/AAAAAAAAap0/Zk_ABBPvFPE/s250-c/Wallpaper_Latino_Interestelar_V2_Preview_JPosters.png"/>
+            <Movie title="InterEstelar" gener="Acción" image = "http://2.bp.blogspot.com/-_DGDXwanEjA/VDxnbllbQ_I/AAAAAAAAap0/Zk_ABBPvFPE/s250-c/Wallpaper_Latino_Interestelar_V2_Preview_JPosters.png"/>
+            <Movie title="InterEstelar" gener="Acción" image = "http://2.bp.blogspot.com/-_DGDXwanEjA/VDxnbllbQ_I/AAAAAAAAap0/Zk_ABBPvFPE/s250-c/Wallpaper_Latino_Interestelar_V2_Preview_JPosters.png"/>
+            <Movie title="InterEstelar" gener="Acción" image = "http://2.bp.blogspot.com/-_DGDXwanEjA/VDxnbllbQ_I/AAAAAAAAap0/Zk_ABBPvFPE/s250-c/Wallpaper_Latino_Interestelar_V2_Preview_JPosters.png"/>
+            <Movie title="InterEstelar" gener="Acción" image = "http://2.bp.blogspot.com/-_DGDXwanEjA/VDxnbllbQ_I/AAAAAAAAap0/Zk_ABBPvFPE/s250-c/Wallpaper_Latino_Interestelar_V2_Preview_JPosters.png"/>
+            <Movie title="InterEstelar" gener="Acción" image = "http://2.bp.blogspot.com/-_DGDXwanEjA/VDxnbllbQ_I/AAAAAAAAap0/Zk_ABBPvFPE/s250-c/Wallpaper_Latino_Interestelar_V2_Preview_JPosters.png"/>
+            <Movie title="InterEstelar" gener="Acción" image = "http://2.bp.blogspot.com/-_DGDXwanEjA/VDxnbllbQ_I/AAAAAAAAap0/Zk_ABBPvFPE/s250-c/Wallpaper_Latino_Interestelar_V2_Preview_JPosters.png"/>
+          </div>
+          <div className="App-favoritelist">
+            <div className="favoritelist-tittle" ><h4>Lista Favoritos</h4> </div>
+            <Favorite/>
+          </div>
+        </div>
       </div>
     );
   }

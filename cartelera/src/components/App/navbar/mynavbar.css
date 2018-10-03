@@ -1,0 +1,32 @@
+.Logo{
+    border-radius: 25px;
+    border-color: black;
+    width: 80px;
+    height: 50px;
+}
+
+.mynavbar{
+    text-align: left;
+}
+
+.button {
+    background-color: #e7e7e7; 
+    color: black;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+hr{
+    margin-top:0;
+}
