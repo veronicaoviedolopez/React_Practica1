@@ -19,8 +19,10 @@ class App extends Component {
 
   handleClick(title){
     console.log(title);
+    let array = this.state.myFavorites;
+    array.push(title);
     this.setState(
-     { myFavorites: this.state.myFavorites.push(title)}
+     { myFavorites: array }
     )
   }
 
