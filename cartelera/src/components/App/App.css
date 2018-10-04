@@ -43,12 +43,20 @@ hr {
 
 .App-favoritelist{
   /*height: 800px;*/
-  background-color: #112244;
+  background-color: hsl(220, 60%, 17%);
   color: azure
+  
 }
 
 .favoritelist-tittle{
   margin-top: 40px
+}
+.favoritelist-footer{
+  vertical-align: bottom;
+}
+
+.favoritelist-content{
+  margin-bottom: 0px
 }
 
 /*@keyframes App-logo-spin {

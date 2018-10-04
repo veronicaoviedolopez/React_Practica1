@@ -1,10 +1,12 @@
 .Media {
-    cursor: pointer;
-    margin-right: 30px;
+    /*cursor: pointer;*/
     display: inline-block; 
     vertical-align: top;
     padding-bottom: 150px;
     white-space: nowrap;
+    width: 227px;
+    padding-right: 15px;
+
   }
   
   .Media:hover .Media-cover {
@@ -18,16 +20,31 @@
   }
   
   .Media-image {
-    object-fit: cover;
+    /*object-fit: cover;*/
+    width: 100%;
   }
   
   .Media-title {
     margin: 5px 0 0 0;
     color: #44546b;
     white-space: normal;
+   font-size: 20px;
   }
   
   .Media-author {
     font-size: 12px;
     margin: 5px 0 0 0;
+    color: #44546b;
+  }
+
+  .Media-AddToFavorites{
+    border: none;
+    background-color:transparent;
+    font-size: 12px;
+    cursor: pointer;
+    color: #44546b;
+    display: inline-block;
+    padding: 0px;
+    text-align: left;
+    text-decoration: none;
   }
